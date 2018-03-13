@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Planets of the Univers</title>
+	<link href="{{site.baseurl}}/css/common.css" rel ="stylesheet">
+	<title>Planets of the Universe</title>
 </head>
 <body>
 
 <header>
 	<strong>Planets of the Universe</strong>
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="news.html">News</a></li>
-		</ul>
-	</nav>
+{% include nav.html navclass='nav-top'%}
 </header>
 {{content}}
+<footer>
+	<strong>Planets of the Universe</strong>
+{% include nav.html navclass='nav-bottom'%}
+</footer>
 </body>
 </html>
